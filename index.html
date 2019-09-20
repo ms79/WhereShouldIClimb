@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type='text/javascript' src="app.js"></script>
+        <script type='text/javascript' src="config.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <h1 id="title">Where should I climb today?</h1>
+    </head>
+    <body>
+        <h2 id="loc">Your current location is </h2>
+        <h3 id="weather"> The current weather is </h3>
+        <h3 id="conditions"></h3>
+        <section id="routeOptions"> 
+
+            <div class="buttons">
+                <h3>I want to climb: </h3>
+                <button id="sport" onclick="loadSportRoutes()">Sport</button>
+                <button id="boulder" onclick="loadBoulderRoutes()">Boulder</button>
+                <button id="trad" onclick="loadTradRoutes()">Trad</button>
+                <button id="all" onclick="loadAllRoutes()">Show all</button>
+            </div>
+
+            <h3 id="display_message"></h3>
+
+            <!-- <form action="/action_page.php">
+                <select name="Difficulty" id="test">
+                    <option value="5.6">5.6</option>
+                    <option value="5.7">5.7</option>
+                    <option value="5.8">5.8</option>
+                    <option value="5.9">5.9</option>
+                    <option value="5.10">5.10</option>
+                    <option value="5.11">5.11</option>
+                    <option value="5.12">5.12</option>
+                    <option value="5.13">5.13</option>
+                    <option value="5.14">5.14</option>
+                    <br>
+                </select>
+                <input type="button">   
+            </form> -->
+        </section>
+
+        <!-- <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoP_ue6inj6VPbd_Xa2iwnD65LcWUAEOc&callback=initMap">
+        </script> -->
+        <!-- <div id="map"></div> -->
+        <section>
+            <div id="routes">
+
+
+            </div>
+
+        </section>
+
+    </body>
+</html>
