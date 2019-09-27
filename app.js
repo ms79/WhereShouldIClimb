@@ -178,7 +178,7 @@ window.addEventListener('load', () => {
                 });
 
 
-            const mp_url = 'https://www.mountainproject.com/data/get-routes-for-lat-lon?lat='+lat+'&lon='+long+'&maxResults='+50+'&key='+api_key_mp; 
+            const mp_url = 'https://www.mountainproject.com/data/get-routes-for-lat-lon?lat=37.3614&lon=-118.3997&maxDistance=50&key=200589584-e4fd61426dcd70c23a0de88884c411aa'; 
 
             fetch(mp_url)
                 .then(response => {
