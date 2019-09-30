@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #1b1b1b;
     text-align: center;
@@ -16,7 +19,7 @@ a {
     margin-bottom: 0;
 }
 #conditions{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 ul {
     padding: 0;
@@ -40,7 +43,7 @@ li {
     font-size: 12pt;
 }
 #title {
-    margin-top: 30%;
+    margin-top: 10%;
     margin-bottom: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
@@ -52,8 +55,8 @@ li {
     width: 400px;
 }
 #routes {
-    display: block; 
-    align-content: center;
+    display: center; 
+    text-align: center;
 }
 .routeBox{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -61,7 +64,8 @@ li {
     display: flex;
     width: 500px;
     overflow: auto;
-    padding-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 5px;
     padding-bottom: 5px;
     

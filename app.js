@@ -9,9 +9,9 @@ TODO:
 
 const proxy = 'https://cors-anywhere.herokuapp.com/'
 
-//var api_key_google = config.google_key;
-//var api_key_mp = config.mp_key;
-var api_key_ds = "eea9607f465e798a75817910d122e169"
+var api_key_google = config.google_key;
+var api_key_mp = config.mp_key;
+var api_key_ds = config.ds_key;
 
 const min_climb_temp = 50;
 const max_climb_temp = 80;
@@ -166,7 +166,7 @@ window.addEventListener('load', () => {
             lat = position.coords.latitude;
             
             
-            const ds_url = /*proxy+*/'https://api.darksky.net/forecast/'+api_key_ds+'/'+lat+','+long;
+            const ds_url = proxy+'https://api.darksky.net/forecast/'+api_key_ds+'/'+lat+','+long;
             fetch(ds_url)
                 .then(response => {
                     return response.json()
@@ -178,7 +178,7 @@ window.addEventListener('load', () => {
                 });
 
 
-            const mp_url = 'https://www.mountainproject.com/data/get-routes-for-lat-lon?lat=37.3614&lon=-118.3997&maxDistance=50&key=200589584-e4fd61426dcd70c23a0de88884c411aa'; 
+            const mp_url = 'https://www.mountainproject.com/data/get-routes-for-lat-lon?lat=37.3614&lon=-118.3997&maxDistance=50&key=200589584-e4fd61426dcd70c23a0de88884c411aa';
 
             fetch(mp_url)
                 .then(response => {

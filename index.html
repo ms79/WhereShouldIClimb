@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script type='text/javascript' src="app.js"></script>
         <script type='text/javascript' src="config.js"></script>
+        <script type='text/javascript' src="app.js"></script>
+        <script type='text/javascript' src="routes.json"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
+
         <h1 id="title">Where should I climb today?</h1>
     </head>
     <body>
@@ -14,10 +16,14 @@
 
             <div class="buttons">
                 <h3>I want to climb: </h3>
-                <button id="sport" onclick="loadSportRoutes()">Sport</button>
-                <button id="boulder" onclick="loadBoulderRoutes()">Boulder</button>
-                <button id="trad" onclick="loadTradRoutes()">Trad</button>
-                <button id="all" onclick="loadAllRoutes()">Show all</button>
+                <a href="#weather">
+                    <button id="sport" onclick="loadSportRoutes()">Sport</button></a>
+                <a href="#weather">
+                    <button id="boulder" onclick="loadBoulderRoutes()">Boulder</button></a>
+                <a href="#weather">
+                    <button id="trad" onclick="loadTradRoutes()">Trad</button></a>
+                <a href="#weather">                   
+                    <button id="all" onclick="loadAllRoutes()">Show all</button></a>
             </div>
 
             <h3 id="display_message"></h3>
@@ -39,7 +45,6 @@
             </form> -->
         </section>
 
-        <!-- <div id="map"></div> -->
         <section>
             <div id="routes">
 
